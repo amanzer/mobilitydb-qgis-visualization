@@ -3,7 +3,7 @@ This repository contains the Proof-Of-Concept demo built to test out the Interac
 
 # Design Architecture
 
-![alt text](visuals/design_architecture.png)
+![alt text](../Figures/interactive_mode_design_architecture.png)
 
 This solution works in three steps :
 

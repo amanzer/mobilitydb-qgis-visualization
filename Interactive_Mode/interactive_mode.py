@@ -391,7 +391,7 @@ class Move:
     MobilityDB data. It manages the frames and handles changes in the temporal controller's settings.
     """
 
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Initialize the Move class and set up the temporal controller and other components.
         """
@@ -422,7 +422,7 @@ class Move:
         # Execute the main logic to set up the layers
         self.execute()
 
-    def execute(self):
+    def execute(self) -> None:
         """
         Set up the connection parameters and initialize the MobilityDB layers.
         """
@@ -440,7 +440,7 @@ class Move:
         # Initialize the MobilityDB layer handler
         self.mobilitydb_layer = MobilitydbLayerHandler(self.iface, self.task_manager, SRID, connection_parameters)
 
-    def save_fps(self):
+    def save_fps(self) -> None:
         """
         Save the recorded FPS to a file for later analysis.
         """
@@ -448,7 +448,7 @@ class Move:
             pickle.dump(self.fps_record, f)
         print("FPS records saved")
 
-    def on_new_frame(self):
+    def on_new_frame(self) -> None:
         """
         Handle the event when a new frame is displayed during the animation.
 
@@ -475,7 +475,7 @@ class Move:
             iface.messageBar().pushMessage("Info", "Temporal Controller settings were changed", level=Qgis.Info)
             self.temporal_controller_state_change_signal()
 
-    def temporal_controller_state_change_signal(self):
+    def temporal_controller_state_change_signal(self) -> None:
         """
         Handle the signal emitted when the temporal controller settings are changed.
         """

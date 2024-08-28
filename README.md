@@ -4,7 +4,7 @@ This repository contains proof-of-concept implementations of the various designs
 
 
 
-![Interactive Mode visualization](Interactive_Mode/visuals/interactive_mode.gif)
+![Interactive Mode visualization](Figures/interactive_mode.gif)
 
 
 ## Overview
